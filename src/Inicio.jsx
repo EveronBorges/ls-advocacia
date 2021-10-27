@@ -12,7 +12,7 @@ const Inicio = () => {
         boxShadow: `inset 0 0 0 2000px rgba( 220, 20, 60, 0.5)`,
       }}
     >
-      <img src={logo} />
+      <img src={logo} alt="" />
     </div>
   );
 };
