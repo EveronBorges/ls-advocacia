@@ -1,7 +1,6 @@
 import bg from "./images/top-ls-advocacia.jpg";
 import logo from "./images/logo-ls-advocacia.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { width } from "dom-helpers";
 
 const Inicio = () => {
   return (
