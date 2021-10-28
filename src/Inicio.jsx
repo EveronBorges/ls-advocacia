@@ -59,7 +59,7 @@ const Inicio = () => {
                             id="txNome"
                             name="txNome"
                             type="text"
-                            className="form-control"
+                            className="form-control new-border"
                           ></input>
                         </div>
                         <div className="form-group">
@@ -70,7 +70,7 @@ const Inicio = () => {
                             id="txWhats"
                             name="txWhats"
                             type="text"
-                            className="form-control border-control"
+                            className="form-control"
                             placeholder={`(00) 00000-0000`}
                           ></input>
                         </div>
