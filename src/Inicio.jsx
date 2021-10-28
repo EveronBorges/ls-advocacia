@@ -17,7 +17,30 @@ const Inicio = () => {
         <div className="row">
           <div className="col-sm-12">
             <div className="row">
-              <div className="col-sm-4 offset-sm-6">
+              <div className="col-sm-6">
+                <table style={{ width: "100%", height: "100%" }}>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h2
+                          style={{
+                            textAlign: "center",
+                            textShadow: "2px 2px 3px #262510",
+                            padding: "30px",
+                          }}
+                        >
+                          <b>
+                            Você está enfrentando dificuldades para pagar o seu
+                            financiamento? Dê o primeiro passo para regularizar
+                            suas finanças. Envie uma mensagem AGORA MESMO!
+                          </b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="col-sm-4">
                 <div
                   style={{
                     width: "100%",
@@ -95,7 +118,7 @@ const Inicio = () => {
                             className="form-control"
                             rows={4}
                           ></textarea>
-                        </div>                        
+                        </div>
                       </div>
                     </div>
                   </div>
