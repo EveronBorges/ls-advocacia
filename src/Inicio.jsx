@@ -163,7 +163,7 @@ const Inicio = () => {
                   height: "200px",
                   display: "table-cell",
                   fontSize:"x-large",
-                  fontWeight:"bold"
+                  fontFamily:"Barlow Semi Condensed"
                 }}
               >
                 Há 11 anos atuamos na resolução de conflitos judiciais e extrajudiciais, de forma transparente. Atendimento personalizado de pessoas físicas e jurídicas, em todo o estado do Rio Grande do Sul
