@@ -340,7 +340,89 @@ const Inicio = () => {
             </div>
           </div>
         </div>
+        <br />
+        <div className="row">
+          <div className="col-sm-12" style={{ textAlign: "center" }}>
+            <button className="btn btn-success" style={{ height: "50px" }}>
+              <span
+                className="material-icons"
+                style={{ verticalAlign: "bottom" }}
+              >
+                whatsapp
+              </span>
+              &nbsp;QUERO FALAR COM UM ADVOGADO
+            </button>
+          </div>
+        </div>
+        <br />
       </section>
+      <section>
+        <div className="row">
+          <div className="col-sm-10 offset-sm-1">
+            <div className="row">
+              <div className="col-sm-4">
+                <br />
+                <h6>
+                  <b>Redes sociais</b>
+                </h6>
+                <div>
+                  <img src="https://img.icons8.com/small/16/000000/facebook-new.png" />
+                  &nbsp;
+                  <a
+                    style={{ outline: "none", color: "var(--bs-body-color)" }}
+                    href="https://www.instagram.com/lsadvogados"
+                  >
+                    www.instagram.com/lsadvogados
+                  </a>
+                  <br />
+                  <img src="https://img.icons8.com/small/16/000000/instagram-new.png" />
+                  &nbsp;@lsadvogados
+                  <br />
+                  <img src="https://img.icons8.com/small/16/000000/secured-letter.png" />
+                  &nbsp;email@teste.com.br
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <br />
+                <div
+                  style={{
+                    borderLeft: "1px solid var(--bs-body-color)",
+                    borderRight: "1px solid var(--bs-body-color)",
+                    paddingLeft: "30px",
+                  }}
+                >
+                  <h6>
+                    <b>Endereços e Telefones</b>
+                  </h6>
+                  <b>Matriz Porto Alegre</b> <br />
+                  Telefone: (51) 98497-0548
+                  <br />
+                  Praça Quinze de Novembro, 66
+                  <br />
+                  Centro Histórico, Porto Alegre - RS
+                  <br />
+                  CEP: 90020-061
+                  <br />
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <br />
+                <br />
+                <b>Filial Caxias do Sul</b> <br />
+                Telefone: (54) 3419-2030 <br />
+                Av. Júlio de Castilhos, 2773
+                <br />
+                Centro, Caxias do Sul - RS
+                <br />
+                CEP: 95010-003
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
     </>
   );
 };
