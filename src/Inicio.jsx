@@ -366,7 +366,7 @@ const Inicio = () => {
                   <b>Redes sociais</b>
                 </h6>
                 <div>
-                  <img src="https://img.icons8.com/small/16/000000/facebook-new.png" />
+                  <img src="https://img.icons8.com/small/16/000000/facebook-new.png" alt="" />
                   &nbsp;
                   <a
                     style={{ outline: "none", color: "var(--bs-body-color)" }}
@@ -375,10 +375,10 @@ const Inicio = () => {
                     www.instagram.com/lsadvogados
                   </a>
                   <br />
-                  <img src="https://img.icons8.com/small/16/000000/instagram-new.png" />
+                  <img src="https://img.icons8.com/small/16/000000/instagram-new.png" alt="" />
                   &nbsp;@lsadvogados
                   <br />
-                  <img src="https://img.icons8.com/small/16/000000/secured-letter.png" />
+                  <img src="https://img.icons8.com/small/16/000000/secured-letter.png" alt="" />
                   &nbsp;email@teste.com.br
                 </div>
               </div>
