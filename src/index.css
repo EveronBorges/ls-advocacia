@@ -35,7 +35,7 @@ h2, h3 {
   font-size: small;
 }
 
-#txNome:focus, #txWhats:focus, #txEmail:focus, #txObservacao:focus {
+#txNome:focus, #txWhats:focus, #txEmail:focus, #txObservacao:focus, #btnSolicitar:focus {
   border-color: brown;
   box-shadow: none
 }

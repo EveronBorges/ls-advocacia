@@ -18,7 +18,7 @@ const Inicio = () => {
           <div className="col-sm-12">
             <div className="row">
               <div className="col-sm-6">
-                <table style={{ width: "100%", height: "100%" }}>
+                <table style={{ width: "100%", height: "100vh" }}>
                   <tbody>
                     <tr>
                       <td>
@@ -43,13 +43,17 @@ const Inicio = () => {
               <div className="col-sm-4">
                 <div
                   style={{
-                    width: "100%",
-                    height: "90vh",
-                    boxShadow: `inset 0 0 0 2000px rgba( 0, 0, 0, 0.75)`,
+                    width: "500px",
+                    height: "106vh",
+                    boxShadow: `inset 0 0 0 2000px rgba( 0, 0, 0, 1)`,
+                    position: "absolute",
+                    top: "-10px",
+                    borderRadius: "10px",
                   }}
                 >
                   <div className="row">
                     <div className="col-sm-12" style={{ textAlign: "center" }}>
+                      <br />
                       <img
                         src={logo}
                         alt="logo"
@@ -116,8 +120,27 @@ const Inicio = () => {
                             id="txObservacao"
                             name="txObservacao"
                             className="form-control"
-                            rows={4}
+                            rows={5}
                           ></textarea>
+                        </div>
+                        <br />
+                        <div
+                          className="form-group"
+                          style={{ width: "100%", textAlign: "center" }}
+                        >
+                          <button
+                            id="btnSolicitar"
+                            name="btnSolicitar"
+                            className="btn"
+                            style={{
+                              width: "250px",
+                              backgroundColor: "transparent",
+                              borderColor: "crimson",
+                              color: "white",
+                            }}
+                          >
+                            <b>SOLICITAR CONTATO</b>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -128,7 +151,27 @@ const Inicio = () => {
           </div>
         </div>
       </section>
-      <section>adjhaksjdhakashdk</section>
+      <section style={{ height: "250px", backgroundColor: "gold" }}>
+        <div className="row">
+          <div className="col-sm-6 offset-sm-3">
+            <p style={{ width: "100%", height: "235px", display: "table" }}>
+              <label
+                style={{
+                  textAlign: "center",
+                  verticalAlign: "middle",
+                  width: "100%",
+                  height: "200px",
+                  display: "table-cell",
+                  fontSize:"x-large",
+                  fontWeight:"bold"
+                }}
+              >
+                Há 11 anos atuamos na resolução de conflitos judiciais e extrajudiciais, de forma transparente. Atendimento personalizado de pessoas físicas e jurídicas, em todo o estado do Rio Grande do Sul
+              </label>
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
