@@ -45,6 +45,7 @@ const Inicio = () => {
                   style={{
                     width: "500px",
                     height: "106vh",
+                    minHeight: "675px",
                     boxShadow: `inset 0 0 0 2000px rgba( 0, 0, 0, 1)`,
                     position: "absolute",
                     top: "-10px",
@@ -151,10 +152,49 @@ const Inicio = () => {
           </div>
         </div>
       </section>
-      <section style={{ height: "250px", backgroundColor: "gold" }}>
+      <section style={{ backgroundColor: "#f7f2e9" }}>
+        <div className="row">
+          <div className="col-sm-8 offset-sm-2">
+            <p style={{ width: "100%", height: "280px", display: "table" }}>
+              <label
+                style={{
+                  textAlign: "justify",
+                  verticalAlign: "middle",
+                  width: "100%",
+                  height: "200px",
+                  display: "table-cell",
+                  fontSize: "x-large",
+                  fontFamily: "Barlow Semi Condensed",
+                }}
+              >
+                <h4>JUROS ABUSIVOS? Reduza a sua dívida! </h4>
+                <br />A LS Advogados dispõe de ampla experiência em ações de
+                revisão de contratos de financiamento de veículos. Recupere a
+                sua tranquilidade financeira e assegure a manutenção de posse do
+                seu veículo.
+              </label>
+            </p>
+            <div className="row">
+              <div className="col-sm-12" style={{ textAlign: "center" }}>
+                <button className="btn btn-success" style={{ height: "50px" }}>
+                  <span
+                    className="material-icons"
+                    style={{ verticalAlign: "bottom" }}
+                  >
+                    whatsapp
+                  </span>
+                  &nbsp;QUERO FALAR COM UM ADVOGADO
+                </button>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </section>
+      <section style={{ height: "200px", backgroundColor: "gold" }}>
         <div className="row">
           <div className="col-sm-6 offset-sm-3">
-            <p style={{ width: "100%", height: "235px", display: "table" }}>
+            <p style={{ width: "100%", height: "200px", display: "table" }}>
               <label
                 style={{
                   textAlign: "center",
@@ -162,13 +202,142 @@ const Inicio = () => {
                   width: "100%",
                   height: "200px",
                   display: "table-cell",
-                  fontSize:"x-large",
-                  fontFamily:"Barlow Semi Condensed"
+                  fontSize: "x-large",
+                  fontFamily: "Barlow Semi Condensed",
                 }}
               >
-                Há 11 anos atuamos na resolução de conflitos judiciais e extrajudiciais, de forma transparente. Atendimento personalizado de pessoas físicas e jurídicas, em todo o estado do Rio Grande do Sul
+                Há 11 anos atuamos na resolução de conflitos judiciais e
+                extrajudiciais, de forma transparente. Atendimento personalizado
+                de pessoas físicas e jurídicas, em todo o estado do Rio Grande
+                do Sul
               </label>
             </p>
+          </div>
+        </div>
+      </section>
+      <section
+        style={{
+          paddingLeft: "200px",
+          paddingRight: "200px",
+          paddingTop: "25px",
+          textAlign: "justify",
+          textJustify: "inter-word",
+        }}
+      >
+        <h4 style={{ color: "var(--bs-body-color)" }}>SOBRE A EMPRESA</h4>
+        <br />
+        <p>
+          O Escritório De Luiz, Souza e Advogados Associados atua no mercado
+          desde 2010, com intuito de encurtar o caminho entre as pessoas e a
+          justiça, por meio de serviços de elevada qualidade.
+        </p>
+        <p>
+          Contamos com uma equipe multidisciplinar de advogados e profissionais
+          das áreas de administração, contabilidade e economia, com o objetivo
+          de oferecer soluções completas tanto para pessoas físicas, quanto para
+          pessoas jurídicas.
+        </p>
+        <p>
+          Com ética e responsabilidade atendemos nossos clientes de forma
+          personalizada, pois acreditamos que criar um relacionamento duradouro
+          e de confiança é a premissa para resolução de qualquer causa.
+        </p>
+        <p>
+          Se você procura aconselhamento jurídico ou representação em uma ação
+          judicial, conte com a LS Advogados. Há 11 anos o seu direito é a nossa
+          responsabilidade. Agende seu atendimento agora mesmo.
+        </p>
+        <br />
+      </section>
+      <section
+        style={{ backgroundColor: "var(--bs-body-color)", color: "white" }}
+      >
+        <br />
+        <h6 style={{ width: "100%", textAlign: "center", fontWeight: "bold" }}>
+          LOGO ABAIXO: VANTAGENS DE ADQUIRIR OS SERVIÇOS/PRODUTOS E DEPOIMENTOS
+        </h6>
+        <br />
+        <div className="row">
+          <div className="col-sm-5 offset-sm-2">
+            <div className="form-group">
+              <p style={{ width: "100%" }}>
+                <span
+                  class="material-icons"
+                  style={{ color: "crimson", verticalAlign: "bottom" }}
+                >
+                  chevron_right
+                </span>
+                Reduzir taxas de juros em seus contratos
+              </p>
+              <p style={{ width: "100%" }}>
+                <span
+                  class="material-icons"
+                  style={{ color: "crimson", verticalAlign: "bottom" }}
+                >
+                  chevron_right
+                </span>
+                Evitar ações de busca e apreensão de seu veículo
+              </p>
+              <p style={{ width: "100%" }}>
+                <span
+                  class="material-icons"
+                  style={{ color: "crimson", verticalAlign: "bottom" }}
+                >
+                  chevron_right
+                </span>
+                Resolver inscrição indevida em SPC, SERASA e Cartório de
+                Protestos
+              </p>
+              <p style={{ width: "100%" }}>
+                <span
+                  class="material-icons"
+                  style={{ color: "crimson", verticalAlign: "bottom" }}
+                >
+                  chevron_right
+                </span>
+                Recorrer de auxílio doença negado
+              </p>
+            </div>
+          </div>
+          <div className="col-sm-5">
+            <div className="form-group">
+              <p style={{ width: "100%" }}>
+                <span
+                  class="material-icons"
+                  style={{ color: "crimson", verticalAlign: "bottom" }}
+                >
+                  chevron_right
+                </span>
+                Entrar com pedido de aposentadoria
+              </p>
+              <p style={{ width: "100%" }}>
+                <span
+                  class="material-icons"
+                  style={{ color: "crimson", verticalAlign: "bottom" }}
+                >
+                  chevron_right
+                </span>
+                Revisar equívocos no recolhimento de produtos
+              </p>
+              <p style={{ width: "100%" }}>
+                <span
+                  class="material-icons"
+                  style={{ color: "crimson", verticalAlign: "bottom" }}
+                >
+                  chevron_right
+                </span>
+                Registrar marcas e patentes
+              </p>
+              <p style={{ width: "100%" }}>
+                <span
+                  class="material-icons"
+                  style={{ color: "crimson", verticalAlign: "bottom" }}
+                >
+                  chevron_right
+                </span>
+                Adequar sua empresa às normas ambientais
+              </p>
+            </div>
           </div>
         </div>
       </section>
