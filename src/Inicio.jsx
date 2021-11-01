@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import LGPDCookie from "./cookie";
 import { SendMail } from "./services";
 import Swal from "sweetalert2";
+import Button from "react-bootstrap-button-loader";
 
 const Inicio = () => {
   const [showCookie, setShowCookie] = useState("none");
@@ -12,14 +13,14 @@ const Inicio = () => {
   const [whatsapp, setWhatsApp] = useState("");
   const [email, setEmail] = useState("");
   const [descricao, setDescricao] = useState("");
+  const [buttonLoading, setButtonLoading] = useState(false);
 
   const limparContato = () => {
     setNome("");
     setWhatsApp("");
     setEmail("");
     setDescricao("");
-
-  }
+  };
 
   useEffect(() => {
     if (!localStorage.LSCookie) {
@@ -174,10 +175,9 @@ const Inicio = () => {
                           className="form-group"
                           style={{ width: "100%", textAlign: "center" }}
                         >
-                          <button
-                            id="btnSolicitar"
-                            name="btnSolicitar"
-                            className="btn"
+                          <Button
+                            id={`btnSolicitar`}
+                            loading={buttonLoading}
                             style={{
                               width: "250px",
                               backgroundColor: "transparent",
@@ -208,26 +208,32 @@ const Inicio = () => {
                                 return;
                               }
 
+                              setButtonLoading(true);
+
                               SendMail({
                                 nome,
                                 whatsapp,
                                 email,
                                 descricao,
-                              }).then((retorno) => {
-                                console.log(retorno);
-                                
-                                Swal.fire({
-                                  icon: "success",
-                                  title: "Solicitação de contato",
-                                  text: "Seu e-mail foi enviado com sucesso!",
-                                }).finally(()=>{
-                                  limparContato();
+                              })
+                                .then((retorno) => {
+                                  console.log(retorno);
+
+                                  Swal.fire({
+                                    icon: "success",
+                                    title: "Solicitação de contato",
+                                    text: "Seu e-mail foi enviado com sucesso!",
+                                  }).finally(() => {
+                                    limparContato();
+                                  });
                                 })
-                              });
+                                .finally(() => {
+                                  setButtonLoading(false);
+                                });
                             }}
                           >
                             <b>SOLICITAR CONTATO</b>
-                          </button>
+                          </Button>
                         </div>
                       </div>
                     </div>
