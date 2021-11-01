@@ -48,6 +48,7 @@ export const SendMail = ({ nome, whatsapp, email, descricao }) =>
         resolve(retorno);
       })
       .catch((reject) => {
+          console.log(apiKey)
         resolve(reject);
       });
   });
