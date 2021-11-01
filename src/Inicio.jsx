@@ -11,7 +11,7 @@ const Inicio = () => {
     if (!localStorage.LSCookie) {
       setShowCookie("block");
     }
-  });
+  }, []);
 
   const acceptCookie = () => {
     setShowCookie("none");
