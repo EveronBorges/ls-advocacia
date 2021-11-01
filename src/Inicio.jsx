@@ -3,9 +3,23 @@ import bg from "./images/top-ls-advocacia.jpg";
 import logo from "./images/logo-ls-advocacia.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LGPDCookie from "./cookie";
+import { SendMail } from "./services";
+import Swal from "sweetalert2";
 
 const Inicio = () => {
   const [showCookie, setShowCookie] = useState("none");
+  const [nome, setNome] = useState("");
+  const [whatsapp, setWhatsApp] = useState("");
+  const [email, setEmail] = useState("");
+  const [descricao, setDescricao] = useState("");
+
+  const limparContato = () => {
+    setNome("");
+    setWhatsApp("");
+    setEmail("");
+    setDescricao("");
+
+  }
 
   useEffect(() => {
     if (!localStorage.LSCookie) {
@@ -103,6 +117,10 @@ const Inicio = () => {
                             name="txNome"
                             type="text"
                             className="form-control new-border"
+                            value={nome}
+                            onChange={(control) =>
+                              setNome(control.target.value)
+                            }
                           ></input>
                         </div>
                         <div className="form-group">
@@ -115,17 +133,25 @@ const Inicio = () => {
                             type="text"
                             className="form-control"
                             placeholder={`(00) 00000-0000`}
+                            value={whatsapp}
+                            onChange={(control) =>
+                              setWhatsApp(control.target.value)
+                            }
                           ></input>
                         </div>
                         <div className="form-group">
                           <label for="txEmail" style={{ width: "100%" }}>
-                            E-mail
+                            E-mail*
                           </label>
                           <input
                             id="txEmail"
                             name="txEmail"
                             type="email"
                             className="form-control"
+                            value={email}
+                            onChange={(control) =>
+                              setEmail(control.target.value)
+                            }
                           ></input>
                         </div>
                         <div className="form-group">
@@ -137,6 +163,10 @@ const Inicio = () => {
                             name="txObservacao"
                             className="form-control"
                             rows={5}
+                            value={descricao}
+                            onChange={(control) =>
+                              setDescricao(control.target.value)
+                            }
                           ></textarea>
                         </div>
                         <br />
@@ -153,6 +183,47 @@ const Inicio = () => {
                               backgroundColor: "transparent",
                               borderColor: "crimson",
                               color: "white",
+                            }}
+                            onClick={() => {
+                              if (nome === "") {
+                                Swal.fire({
+                                  icon: "error",
+                                  title: "Solicitação de contato",
+                                  text: "O campo de nome é obrigatório",
+                                });
+                                return;
+                              } else if (whatsapp === "") {
+                                Swal.fire({
+                                  icon: "error",
+                                  title: "Solicitação de contato",
+                                  text: "O campo de WhatsApp é obrigatório",
+                                });
+                                return;
+                              } else if (email === "") {
+                                Swal.fire({
+                                  icon: "error",
+                                  title: "Solicitação de contato",
+                                  text: "O campo de e-mail é obrigatório",
+                                });
+                                return;
+                              }
+
+                              SendMail({
+                                nome,
+                                whatsapp,
+                                email,
+                                descricao,
+                              }).then((retorno) => {
+                                console.log(retorno);
+                                
+                                Swal.fire({
+                                  icon: "success",
+                                  title: "Solicitação de contato",
+                                  text: "Seu e-mail foi enviado com sucesso!",
+                                }).finally(()=>{
+                                  limparContato();
+                                })
+                              });
                             }}
                           >
                             <b>SOLICITAR CONTATO</b>
@@ -188,7 +259,7 @@ const Inicio = () => {
                 revisão de contratos de financiamento de veículos.
                 <br />
                 Recupere a sua tranquilidade financeira e assegure a manutenção
-                de posse do seu veículo.
+                da posse do seu veículo.
               </label>
             </p>
             <div className="row">
