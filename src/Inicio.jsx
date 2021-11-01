@@ -1,8 +1,23 @@
+import React, { useState, useEffect } from "react";
 import bg from "./images/top-ls-advocacia.jpg";
 import logo from "./images/logo-ls-advocacia.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import LGPDCookie from "./cookie";
 
 const Inicio = () => {
+  const [showCookie, setShowCookie] = useState("none");
+
+  useEffect(() => {
+    if (!localStorage.LSCookie) {
+      setShowCookie("block");
+    }
+  });
+
+  const acceptCookie = () => {
+    setShowCookie("none");
+    localStorage.setItem("LSCookie", true);
+  };
+
   return (
     <>
       <section
@@ -158,7 +173,7 @@ const Inicio = () => {
             <p style={{ width: "100%", height: "280px", display: "table" }}>
               <label
                 style={{
-                  textAlign: "justify",
+                  textAlign: "center",
                   verticalAlign: "middle",
                   width: "100%",
                   height: "200px",
@@ -167,11 +182,13 @@ const Inicio = () => {
                   fontFamily: "Barlow Semi Condensed",
                 }}
               >
+                <br />
                 <h4>JUROS ABUSIVOS? Reduza a sua dívida! </h4>
                 <br />A LS Advogados dispõe de ampla experiência em ações de
-                revisão de contratos de financiamento de veículos. Recupere a
-                sua tranquilidade financeira e assegure a manutenção de posse do
-                seu veículo.
+                revisão de contratos de financiamento de veículos.
+                <br />
+                Recupere a sua tranquilidade financeira e assegure a manutenção
+                de posse do seu veículo.
               </label>
             </p>
             <div className="row">
@@ -254,7 +271,7 @@ const Inicio = () => {
       >
         <br />
         <h6 style={{ width: "100%", textAlign: "center", fontWeight: "bold" }}>
-          LOGO ABAIXO: VANTAGENS DE ADQUIRIR OS SERVIÇOS/PRODUTOS E DEPOIMENTOS
+          VANTAGENS DE ADQUIRIR OS SERVIÇOS/PRODUTOS E DEPOIMENTOS
         </h6>
         <br />
         <div className="row">
@@ -366,7 +383,10 @@ const Inicio = () => {
                   <b>Redes sociais</b>
                 </h6>
                 <div>
-                  <img src="https://img.icons8.com/small/16/000000/facebook-new.png" alt="" />
+                  <img
+                    src="https://img.icons8.com/small/16/000000/facebook-new.png"
+                    alt=""
+                  />
                   &nbsp;
                   <a
                     style={{ outline: "none", color: "var(--bs-body-color)" }}
@@ -375,10 +395,16 @@ const Inicio = () => {
                     www.instagram.com/lsadvogados
                   </a>
                   <br />
-                  <img src="https://img.icons8.com/small/16/000000/instagram-new.png" alt="" />
+                  <img
+                    src="https://img.icons8.com/small/16/000000/instagram-new.png"
+                    alt=""
+                  />
                   &nbsp;@lsadvogados
                   <br />
-                  <img src="https://img.icons8.com/small/16/000000/secured-letter.png" alt="" />
+                  <img
+                    src="https://img.icons8.com/small/16/000000/secured-letter.png"
+                    alt=""
+                  />
                   &nbsp;email@teste.com.br
                 </div>
               </div>
@@ -423,6 +449,7 @@ const Inicio = () => {
       </section>
       <br />
       <br />
+      <LGPDCookie showCookie={showCookie} Aceitar={acceptCookie} />
     </>
   );
 };
