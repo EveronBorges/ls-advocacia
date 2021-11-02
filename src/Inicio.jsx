@@ -15,6 +15,9 @@ const Inicio = () => {
   const [descricao, setDescricao] = useState("");
   const [buttonLoading, setButtonLoading] = useState(false);
 
+  const width = window.innerWidth > 640 ? "30vw" : "100%";
+  const height = window.innerWidth > 640 ? "106vh" : "100vh";
+
   const limparContato = () => {
     setNome("");
     setWhatsApp("");
@@ -73,7 +76,7 @@ const Inicio = () => {
               <div className="col-sm-4">
                 <div
                   style={{
-                    width: "500px",
+                    minWidth: `${width}`,
                     height: "106vh",
                     minHeight: "675px",
                     boxShadow: `inset 0 0 0 2000px rgba( 0, 0, 0, 1)`,
@@ -285,16 +288,22 @@ const Inicio = () => {
           </div>
         </div>
       </section>
-      <section style={{ height: "200px", backgroundColor: "gold" }}>
+      <section style={{ backgroundColor: "gold" }}>
         <div className="row">
           <div className="col-sm-6 offset-sm-3">
-            <p style={{ width: "100%", height: "200px", display: "table" }}>
+            <p
+              style={{
+                width: "100%",
+                display: "table",
+                paddingTop: "50px",
+                paddingBottom: "50px",
+              }}
+            >
               <label
                 style={{
                   textAlign: "center",
                   verticalAlign: "middle",
                   width: "100%",
-                  height: "200px",
                   display: "table-cell",
                   fontSize: "x-large",
                   fontFamily: "Barlow Semi Condensed",
@@ -309,39 +318,46 @@ const Inicio = () => {
           </div>
         </div>
       </section>
-      <section
-        style={{
-          paddingLeft: "200px",
-          paddingRight: "200px",
-          paddingTop: "25px",
-          textAlign: "justify",
-          textJustify: "inter-word",
-        }}
-      >
-        <h4 style={{ color: "var(--bs-body-color)" }}>SOBRE A EMPRESA</h4>
-        <br />
-        <p>
-          O Escritório De Luiz, Souza e Advogados Associados atua no mercado
-          desde 2010, com intuito de encurtar o caminho entre as pessoas e a
-          justiça, por meio de serviços de elevada qualidade.
-        </p>
-        <p>
-          Contamos com uma equipe multidisciplinar de advogados e profissionais
-          das áreas de administração, contabilidade e economia, com o objetivo
-          de oferecer soluções completas tanto para pessoas físicas, quanto para
-          pessoas jurídicas.
-        </p>
-        <p>
-          Com ética e responsabilidade atendemos nossos clientes de forma
-          personalizada, pois acreditamos que criar um relacionamento duradouro
-          e de confiança é a premissa para resolução de qualquer causa.
-        </p>
-        <p>
-          Se você procura aconselhamento jurídico ou representação em uma ação
-          judicial, conte com a LS Advogados. Há 11 anos o seu direito é a nossa
-          responsabilidade. Agende seu atendimento agora mesmo.
-        </p>
-        <br />
+      <section>
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="row">
+              <div className="col-sm-8 offset-sm-2">
+                <h4
+                  style={{ color: "var(--bs-body-color)", paddingTop: "50px" }}
+                >
+                  SOBRE A EMPRESA
+                </h4>
+                <div style={{ paddingTop: "20px", paddingBottom: "50px" }}>
+                  <p>
+                    O Escritório De Luiz, Souza e Advogados Associados atua no
+                    mercado desde 2010, com intuito de encurtar o caminho entre
+                    as pessoas e a justiça, por meio de serviços de elevada
+                    qualidade.
+                  </p>
+                  <p>
+                    Contamos com uma equipe multidisciplinar de advogados e
+                    profissionais das áreas de administração, contabilidade e
+                    economia, com o objetivo de oferecer soluções completas
+                    tanto para pessoas físicas, quanto para pessoas jurídicas.
+                  </p>
+                  <p>
+                    Com ética e responsabilidade atendemos nossos clientes de
+                    forma personalizada, pois acreditamos que criar um
+                    relacionamento duradouro e de confiança é a premissa para
+                    resolução de qualquer causa.
+                  </p>
+                  <p>
+                    Se você procura aconselhamento jurídico ou representação em
+                    uma ação judicial, conte com a LS Advogados. Há 11 anos o
+                    seu direito é a nossa responsabilidade. Agende seu
+                    atendimento agora mesmo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section
         style={{ backgroundColor: "var(--bs-body-color)", color: "white" }}

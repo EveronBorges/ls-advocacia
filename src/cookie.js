@@ -1,8 +1,4 @@
 const LGPDCookie = ({ showCookie = "none", Aceitar }) => {
-  if (!localStorage.LSCookie) {
-    //setShowDiv(true);
-  }
-
   return (
     <div className="cookies-container" style={{ display: `${showCookie}` }}>
       <div className="cookies-content">
