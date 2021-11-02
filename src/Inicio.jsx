@@ -77,8 +77,7 @@ const Inicio = () => {
                 <div
                   style={{
                     minWidth: `${width}`,
-                    height: "106vh",
-                    minHeight: "675px",
+                    height: `${height}`,
                     boxShadow: `inset 0 0 0 2000px rgba( 0, 0, 0, 1)`,
                     position: "absolute",
                     top: "-10px",
