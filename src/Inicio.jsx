@@ -493,7 +493,6 @@ const Inicio = () => {
                     src="https://img.icons8.com/small/16/000000/instagram-new.png"
                     alt=""
                   />
-                  https://www.instagram.com/lsadvogados &nbsp;
                   <a
                     style={{ outline: "none", color: "var(--bs-body-color)" }}
                     href="https://www.instagram.com/lsadvogados/"
