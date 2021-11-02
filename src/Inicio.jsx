@@ -484,6 +484,7 @@ const Inicio = () => {
                     style={{ outline: "none", color: "var(--bs-body-color)" }}
                     href="https://www.facebook.com/lsadvog"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     www.instagram.com/lsadvogados
                   </a>
@@ -497,6 +498,7 @@ const Inicio = () => {
                     style={{ outline: "none", color: "var(--bs-body-color)" }}
                     href="https://www.instagram.com/lsadvogados/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     @lsadvogados
                   </a>
