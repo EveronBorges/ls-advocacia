@@ -482,7 +482,8 @@ const Inicio = () => {
                   &nbsp;
                   <a
                     style={{ outline: "none", color: "var(--bs-body-color)" }}
-                    href="https://www.instagram.com/lsadvogados"
+                    href="https://www.facebook.com/lsadvog"
+                    target="_blank"
                   >
                     www.instagram.com/lsadvogados
                   </a>
@@ -491,7 +492,14 @@ const Inicio = () => {
                     src="https://img.icons8.com/small/16/000000/instagram-new.png"
                     alt=""
                   />
-                  &nbsp;@lsadvogados
+                  https://www.instagram.com/lsadvogados &nbsp;
+                  <a
+                    style={{ outline: "none", color: "var(--bs-body-color)" }}
+                    href="https://www.instagram.com/lsadvogados/"
+                    target="_blank"
+                  >
+                    @lsadvogados
+                  </a>
                   <br />
                   <img
                     src="https://img.icons8.com/small/16/000000/secured-letter.png"
