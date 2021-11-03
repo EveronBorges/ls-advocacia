@@ -272,7 +272,16 @@ const Inicio = () => {
             </p>
             <div className="row">
               <div className="col-sm-12" style={{ textAlign: "center" }}>
-                <button className="btn btn-success" style={{ height: "50px" }}>
+                <button
+                  className="btn btn-success"
+                  style={{ height: "50px" }}
+                  onClick={() => {
+                    window.open(
+                      "https://api.whatsapp.com/send?phone=5551984970548",
+                      "_blank"
+                    );
+                  }}
+                >
                   <span
                     className="material-icons"
                     style={{ verticalAlign: "bottom" }}
@@ -452,7 +461,16 @@ const Inicio = () => {
         <br />
         <div className="row">
           <div className="col-sm-12" style={{ textAlign: "center" }}>
-            <button className="btn btn-success" style={{ height: "50px" }}>
+            <button
+              className="btn btn-success"
+              style={{ height: "50px" }}
+              onClick={() => {
+                window.open(
+                  "https://api.whatsapp.com/send?phone=5551984970548",
+                  "_blank"
+                );
+              }}
+            >
               <span
                 className="material-icons"
                 style={{ verticalAlign: "bottom" }}
