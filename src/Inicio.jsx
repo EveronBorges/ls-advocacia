@@ -277,7 +277,7 @@ const Inicio = () => {
                   style={{ height: "50px" }}
                   onClick={() => {
                     window.open(
-                      "https://api.whatsapp.com/send?phone=5551984970548",
+                      "https://api.whatsapp.com/send?phone=5554984181647",
                       "_blank"
                     );
                   }}
@@ -466,7 +466,7 @@ const Inicio = () => {
               style={{ height: "50px" }}
               onClick={() => {
                 window.open(
-                  "https://api.whatsapp.com/send?phone=5551984970548",
+                  "https://api.whatsapp.com/send?phone=5554984181647",
                   "_blank"
                 );
               }}
@@ -524,7 +524,13 @@ const Inicio = () => {
                     src="https://img.icons8.com/small/16/000000/secured-letter.png"
                     alt=""
                   />
-                  &nbsp;email@teste.com.br
+                  &nbsp;agendacaxias@lsadvogados.com
+                  <br />
+                  <img
+                    src="https://img.icons8.com/small/16/000000/whatsapp.png"
+                    alt=""
+                  />
+                  &nbsp;(54) 98418-1647
                 </div>
               </div>
               <div className="col-sm-4">
@@ -546,7 +552,8 @@ const Inicio = () => {
                   <br />
                   Centro Histórico, Porto Alegre - RS
                   <br />
-                  CEP: 90020-061
+                  CEP: 90020-061     
+                  <br />
                   <br />
                 </div>
               </div>

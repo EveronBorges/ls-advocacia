@@ -29,12 +29,8 @@ export const SendMail = ({ nome, whatsapp, email, descricao }) =>
       },
       to: [
         {
-          email: "everon.borges@gmail.com",
-          name: "Éveron Borges",
-        },
-        {
-          email: "fagnerperotto@gmail.com",
-          name: "Fagner Perotto",
+          email: "agendacaxias@lsadvogados.com",
+          name: "LS Advocacia",
         },
       ],
       subject: "CONTATO LS ADVOCACIA",
