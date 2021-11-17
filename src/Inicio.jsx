@@ -372,7 +372,7 @@ const Inicio = () => {
       >
         <br />
         <h6 style={{ width: "100%", textAlign: "center", fontWeight: "bold" }}>
-          VANTAGENS DE ADQUIRIR OS SERVIÇOS/PRODUTOS E DEPOIMENTOS
+          VANTAGENS DE ADQUIRIR OS SERVIÇOS DA LS
         </h6>
         <br />
         <div className="row">
